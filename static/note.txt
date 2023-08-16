@@ -1,0 +1,2 @@
+if u go to 127.0.0.1:8000/static/file_name in statci folder
+it will open it

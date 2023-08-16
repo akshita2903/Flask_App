@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block body %}
+   
+  <!-- FORM - -->
+    <div class="container my-3">
+        <h2>ADD TASK</h2>
+        <form action="/add" method="POST">
+            <div class="mb-3">
+                <label for="textT" class="form-label">Task Title</label>
+                <input type="text" name="title" class="form-control" id="textT" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+                <label for="taskD" class="form-label">Task Description</label>
+                <input type="text" name="description" class="form-control" id="taskD">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+{% endblock body %}
+  

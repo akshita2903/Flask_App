@@ -1,0 +1,44 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+    
+
+
+    <div class="container my-3">
+        <h2>Your Task</h2>
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for task in allTasks %}
+                <tr>
+                    <th scope="row">{{task.id}}</th>
+                    <td>{{task.title}}</td>
+                    <td>{{task.desc}}</td>
+                    <td>{{task.date}}</td>
+                    <td>
+
+                        <button><a href="/update/{{task.id}}"><i class="bi bi-pencil-square"></i></a></button> &nbsp;<button><a
+                                href="/delete/{{task.id}}"><i class="bi bi-trash-fill"></i></a></button>
+                    </td>
+                </tr>
+                {% endfor %}
+
+
+            </tbody>
+        </table>
+
+    </div>
+    <div class="container text-center"><button>
+            <a class="nav-link" href="/add_task" class="button">Add Task</a>
+        </button></div>
+        {% endblock body %}
+   

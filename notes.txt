@@ -1,0 +1,24 @@
+TO INSTALL VIRTUAL ENVIRONMENT
+ py-m pip install virtualenv
+
+ OR 
+ pip install virtualenv
+
+ TO CREATE VIRTUAL ENVIRONMENT
+ virtualenv <VirtualEnvironment name>
+
+ TO ACTIVATE VirtualEnvironment
+.\<VirtualEnvironment name>\Scripts\activate.ps1  FOR POWERSHELL
+
+WHAT TO DO IF ERROR WHILE CREATING VirtualEnvironment?
+RUN <Set-Execution Policy> without <>  in powershell
+
+TO USE SQL IN FLASK INSTALL 
+pip install Flask-SQLAlchemy 
+OR
+py -m pip install Flask-SQLAlchemy
+Flask-SQLAlchemy - It provides facility to make changes in DB through Python
+
+
+
+

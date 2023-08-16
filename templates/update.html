@@ -1,0 +1,24 @@
+   
+{% extends 'base.html' %}
+{% block body %}
+   
+  <!-- FORM - -->
+    <div class="container my-3">
+        <h2>UPDATE TASK</h2>
+        <form action="/update/{{task.id}}" method="POST">
+            <div class="mb-3">
+                <label for="textT" class="form-label">Task Title</label>
+                <input type="text" name="title" class="form-control" id="textT" value="{{task.title}}">
+
+            </div>
+            <div class="mb-3">
+                <label for="taskD" class="form-label">Task Description</label>
+                <input type="text" name="description" class="form-control" id="taskD" value="{{task.desc}}">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+
+    </div>
+{% endblock body %}
+  
